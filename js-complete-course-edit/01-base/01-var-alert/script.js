@@ -12,6 +12,6 @@
 (function() {
     let whatever = "hello world!!!";
     alert(whatever);
-    // your code here
+    document.write(whatever)
 
 })();

@@ -11,6 +11,15 @@
 
 (function() {
 
-  // your code here
+    var cake = prompt ("Do you want some cake?");
+
+    if (result == "yes", "yea", "Yea", "Yes", "Yes, please", "fuck yea") {
+        alert("SIKE, you ain't gettin' none HAH!");
+    }
+
+
+    else {
+        alert("Aight then, more for my greedy ass. Don't come whinin' when you change your mind, though!");
+    }
 
 })();
