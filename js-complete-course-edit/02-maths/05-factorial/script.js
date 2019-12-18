@@ -15,8 +15,21 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        function byFactor(number) {
+
+            var result = 1;
+
+            for (var i = number; i > 1; i--) {
+                result *= i;
+            }
+
+            return result;
+        };
+
+        let theInput = document.getElementById("number").value;
+        alert(byFactor(theInput));
 
     });
 
 })();
+//got help from Steve, starting to get a grip of it more and more!

@@ -11,6 +11,22 @@
 
 (function() {
 
-    // your code here
+    //using for loop because what else? I don't know I'm just a noob
+
+    for (let i = 0; i < 100; i++) {
+        if (i%5 === 0 && 1%3 === 0) /*% = divide remainder - && = and.*/ {
+            console.log(i + "fizzbuzz");
+        }
+        else if (i%5 === 0) {
+            console.log(i + "fizz");
+        }
+        else if (i%3 === 0) {
+            console.log(i + "buzz");
+        }
+        else {
+            console.log(i);
+        };
+    };
+
 
 })();
