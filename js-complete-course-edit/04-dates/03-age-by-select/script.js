@@ -10,18 +10,26 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function () {
+        let d = document.getElementById("dob-day").value;
+        let m = document.getElementById("dob-month").value;
+        let y = document.getElementById("dob-year").value;
 
-    document.getElementById("run").addEventListener("click, function"){
-     //obtain dropdown's value
-     var d = document.getElementById("dob-day").value;
-     var m = document.getElementById("dob-month").value;
-     var y = document.getElementById("dob-year").value;
+        let now = new Date();
+        let toyear = now.getFullYear();
+        let tomon = now.getMonth();
+        let today = now.getDate();
 
+        let age = toyear - y;
+        if (tomon < (m - 1))
+        {
+            age--;
+        }
+        if (((m-1) == tomon) && ( today < d))
+        {
+            age--;
+        }
+        alert(age);
 
-     //registering values
-     //var age = today.getFullYear() - birthDate.getFullYear();
-
-        alert(d + m + y);
-    };
-
+    });
 })();
