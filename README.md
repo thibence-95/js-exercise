@@ -9,3 +9,5 @@ PS: I'll try not to forget to update my README
 02-math: CHECK
 
 MORNING SICCO
+
+I have .DS_Store files everywhere on my laptop, in every folder. Having trouble commiting because of it...
