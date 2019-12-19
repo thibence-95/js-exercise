@@ -5,3 +5,7 @@ At first I didn't really understand JS at all. Even after Sololearn, Neil & Stev
 Thank you for listening to my TEDtalk.
 
 PS: I'll try not to forget to update my README
+
+02-math: CHECK
+
+MORNING SICCO
