@@ -11,16 +11,17 @@
 
 (function() {
 
-    //obtain dropdown's value
-    var day = document.getElementById("dob-day").value;
-    var day = document.getElementById("dob-month").value;
-    var day = document.getElementById("dob-year").value;
 
-    //registering values
-    var age = today.getFullYear() - birthDate.getFullYear();
-    /*
-    *
-    */
-    return age;
+     //obtain dropdown's value
+     var day = document.getElementById("dob-day").value;
+     var month = document.getElementById("dob-month").value;
+     var year = document.getElementById("dob-year").value;
+
+    document.getElementById("run").addEventListener("click, function"){
+     //registering values
+     var age = today.getFullYear() - birthDate.getFullYear();
+
+        alert(age);
+    };
 
 })();
