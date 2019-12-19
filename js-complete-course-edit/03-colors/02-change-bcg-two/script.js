@@ -12,7 +12,9 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
-         document.body.style.backgroundColor = document.getElementById("color").value();
+         let inputColor = document.getElementById("color").value;
+         document.body.style.backgroundColor = inputColor;
+         console.log(inputColor)
     });
 
 })();
