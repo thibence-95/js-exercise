@@ -11,6 +11,16 @@
 
 (function() {
 
-    // your code here
+    //obtain dropdown's value
+    var day = document.getElementById("dob-day").value;
+    var day = document.getElementById("dob-month").value;
+    var day = document.getElementById("dob-year").value;
+
+    //registering values
+    var age = today.getFullYear() - birthDate.getFullYear();
+    /*
+    *
+    */
+    return age;
 
 })();
