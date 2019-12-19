@@ -11,3 +11,5 @@ PS: I'll try not to forget to update my README
 MORNING SICCO
 
 I have .DS_Store files everywhere on my laptop, in every folder. Having trouble commiting because of it...
+
+still stuck on 4 reading this https://stackoverflow.com/questions/49485821/date-month-year-dropdown-type-date-picker/49485997 to see what I can do
