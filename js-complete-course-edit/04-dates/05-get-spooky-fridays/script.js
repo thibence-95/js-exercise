@@ -12,7 +12,7 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function () {
-        let userInput = Number(document.getElementById("year").value);
+        let Input = Number(document.getElementById("year").value);
 
         function spookyMonths(year) {
             for (let month=0; month<=12; month++) {
@@ -21,7 +21,7 @@
                 let d = new Date(year, month, 13);
 
                 //singles out all Fridays that fall on 13ths taken from the let above
-                if (d.getDay() ==5) {
+                if (d.getDay() ===5) {
                     const months = [
                         "January", "Februray", "March",
                         "April", "May", "June",
@@ -33,7 +33,7 @@
             }
         }
 
-        console.log(spookyMonths(userInput));
+        console.log(spookyMonths(Input));
     )});
 
 })();
