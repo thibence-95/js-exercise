@@ -11,9 +11,9 @@
 
 (function() {
 
-    var todayDate = Date.parse(Date());
+    var d = new Date();
 
-    document.getElementById("target").innerHTML = todayDate;
+    document.getElementById("target").innerHTML = d;
 
     // your code here
 
