@@ -79,7 +79,7 @@
         },
         {
             firstname: "Laney",
-            lastname: "O' Mara",
+            lastname: "O'Mara",
             email: "lomarad@forbes.com",
         },
         {
@@ -89,6 +89,10 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        people.forEach(function (element) {
+            console.log(element.firstname);
+        })
+    })
 
 })();
