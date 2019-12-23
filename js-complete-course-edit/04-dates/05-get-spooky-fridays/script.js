@@ -15,26 +15,26 @@
         let Input = Number(document.getElementById("year").value);
 
         function spookyMonths(year) {
-            for (let month=0; month<=12; month++) {
+            for (let month = 0; month <= 12; month++) {
 
                 //singling out every 13th of every month in a let
                 let d = new Date(year, month, 13);
 
                 //singles out all Fridays that fall on 13ths taken from the let above
-                if (d.getDay() ===5) {
+                if (d.getDay() === 5) {
                     const months = [
                         "January", "February", "March",
                         "April", "May", "June",
                         "July", "August", "September",
                         "October", "November", "December"];
 
-                    alert(months [Number(month)]);
+                    document.getElementById("target").innerHTML = (months [Number(month)]);
                 }
             }
         }
 
         console.log(spookyMonths(Input));
+    });
+}());
 
-    )});
 
-})();
