@@ -12,18 +12,27 @@
 (function() {
 
     var fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
+        "Apple",
+        "Pear",
+        "Strawberry",
+        "Tomato",
+        "Orange",
+        "Mandarin",
+        "Durian",
+        "Peach",
+        "Raisin",
+        "Cherry",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function changeArr () {
+        fruits.pop();
+        fruits.shift();
+        fruits.push("Mango");
+    })
+
+    console.log();
+
+
+
 
 })();
