@@ -23,7 +23,7 @@
                 //singles out all Fridays that fall on 13ths taken from the let above
                 if (d.getDay() ===5) {
                     const months = [
-                        "January", "Februray", "March",
+                        "January", "February", "March",
                         "April", "May", "June",
                         "July", "August", "September",
                         "October", "November", "December"];
