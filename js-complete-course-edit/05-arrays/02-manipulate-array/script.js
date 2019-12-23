@@ -24,15 +24,13 @@
         "Cherry",
     ];
 
-    var changeArr = (
-        document.getElementById("run").addEventListener("click", function () {
-            fruits.pop();
-            fruits.shift();
-            fruits.push("Mango");
-        })
+    document.getElementById("run").addEventListener("click", function () {
+        fruits.pop(); //removes the last one
+        fruits.shift(); //removes the first one
+        fruits.push("Mango"); //adds a new one
 
-    console.log(changeArr);
+        console.log(fruits);
+    })
 
-    );
 
 })();
