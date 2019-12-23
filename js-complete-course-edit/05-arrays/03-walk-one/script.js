@@ -27,8 +27,9 @@
     ];
 
     document.getElementById("run").addEventListener("click", function () {
-        var display = fruits.toString();
-        console.log(fruits);
+        for (var i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
     })
 
 })();
