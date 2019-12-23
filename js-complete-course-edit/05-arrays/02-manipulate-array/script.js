@@ -24,15 +24,15 @@
         "Cherry",
     ];
 
-    document.getElementById("run").addEventListener("click", function changeArr () {
-        fruits.pop();
-        fruits.shift();
-        fruits.push("Mango");
-    })
+    var changeArr = (
+        document.getElementById("run").addEventListener("click", function () {
+            fruits.pop();
+            fruits.shift();
+            fruits.push("Mango");
+        })
 
-    console.log();
+    console.log(changeArr);
 
-
-
+    );
 
 })();
