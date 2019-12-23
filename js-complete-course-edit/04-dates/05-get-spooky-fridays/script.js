@@ -28,12 +28,13 @@
                         "July", "August", "September",
                         "October", "November", "December"];
 
-                    alert(months [Number(months)]);
+                    alert(months [Number(month)]);
                 }
             }
         }
 
         console.log(spookyMonths(Input));
+
     )});
 
 })();
