@@ -39,6 +39,11 @@
         },
     ];
 
-    // your code here
+    //copied this from 5.4
+    document.getElementById("run").addEventListener("click", function () {
+        people.forEach(function(item) {
+            console.log(item)
+        })
+    })
 
 })();
