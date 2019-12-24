@@ -91,7 +91,7 @@
 
     document.getElementById("run").addEventListener("click", function () {
         people.forEach(function (person) {
-            if (person.lastname === "Dupont" && firstname === "Jean") {
+            if (person.lastname === "Dupont" && person.firstname === "Jean") {
               console.log(people.indexOf(person));
               console.log(person.email);
             }
