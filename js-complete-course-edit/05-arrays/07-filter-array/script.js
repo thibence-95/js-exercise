@@ -89,6 +89,15 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        let adultArray = []; //makes an empty array as a vessel for the filtered array
+
+        people.forEach(function (person) {
+            if (person.age >= 18) {
+                adultArray.push(person);
+            }
+        })
+        console.log(adultArray)
+    })
 
 })();
