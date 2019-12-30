@@ -90,9 +90,10 @@
     ];
 
     document.getElementById("run").addEventListener("click", function(){
-        let ageSum = people.reduce(function (prev, cur) {
-            return prev + cur.age;
-        })
+        //using .reduce to transform array above
+        let ageSum = people.reduce(function (sum, person) {
+            return sum + person.age;
+        });
         console.log(ageSum);
     })
 
