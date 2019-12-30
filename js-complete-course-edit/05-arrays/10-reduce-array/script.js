@@ -89,6 +89,11 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        let ageSum = people.reduce(function (prev, cur) {
+            return prev + cur.age;
+        })
+        console.log(ageSum);
+    })
 
 })();
