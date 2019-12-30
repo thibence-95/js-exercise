@@ -46,11 +46,19 @@
         let sort = rdm.sort((a, b) => {return a-b;});
 
         //count 'em oop
-        let arrSum = rdm1 + rdm2 + rdm3 + rdm4 + rdm5 + rdm6 + rdm7 + rdm8 + rdm9 + rdm10
+        let arrSum = rdm1 + rdm2 + rdm3 + rdm4 + rdm5 + rdm6 + rdm7 + rdm8 + rdm9 + rdm10;
 
         //calculates average
         let calcAverage = arrSum/(rdm.length);
 
+        //definition list
+        document.getElementById("min").innerHTML = sort[0];
+        document.getElementById("max").innerHTML = sort[9];
+        document.getElementById("sum").innerHTML = arrSum;
+        document.getElementById("average").innerHTML = calcAverage;
+
+
+        
         console.log(rdm.length);
     });
 
