@@ -42,7 +42,16 @@
         document.getElementById("n-1").innerHTML = rdm9;
         document.getElementById("n-1").innerHTML = rdm10;
 
+        //this sorts output from small to big
         let sort = rdm.sort((a, b) => {return a-b;});
+
+        //count 'em oop
+        let arrSum = rdm1 + rdm2 + rdm3 + rdm4 + rdm5 + rdm6 + rdm7 + rdm8 + rdm9 + rdm10
+
+        //calculates average
+        let calcAverage = arrSum/(rdm.length);
+
+        console.log(rdm.length);
     });
 
 })();
