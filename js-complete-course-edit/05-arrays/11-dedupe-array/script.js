@@ -28,6 +28,18 @@
         "cerise",
     ];
 
-    // your code here
+    function removeDups(fruits) {
+
+        let unique = {};
+        fruits.forEach(function(i) {
+            if(!unique[i]) {
+                unique[i] = true;
+            }
+            
+        });
+        return Object.keys(unique);
+    }
+
+    removeDups(fruits);
 
 })();
