@@ -11,6 +11,13 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        var numbers = [];
+        for (var i = 0; i <=100; i++) {
+            numbers.push(i);
+        }
+
+        
+    });
 
 })();
