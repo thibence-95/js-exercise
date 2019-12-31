@@ -11,13 +11,8 @@
 
 (function() {
 
-    //creating let to select "target" because querySelectorAll doesn't work
-    let select = document.querySelector(".target");
-    let i;
-
-    //getting it to work on all other "target elements"
-    for (i = 0; i < select.length; i++) {
-        select[i].innerHTML = "I don't speak faggotois";
-    }
+    document.querySelector("p.target").forEach(function (p) {
+        p.innerHTML = "Je ne speak no faggotois";
+    })
 
 })();
