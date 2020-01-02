@@ -20,3 +20,5 @@ Sicco not that I want to seem like a suck-up but I hope whatever family related 
 
 
 I'm absolutely stuck on 5.6 seemed so simple at first.
+
+![interesting...](https://www.thoughtco.com/and-in-javascript-2037515)
