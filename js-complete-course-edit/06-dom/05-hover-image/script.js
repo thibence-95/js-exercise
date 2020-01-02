@@ -11,6 +11,17 @@
 
 (function() {
 
-    // your code here
+    $("#emoji")({
+        onmouseenter: function () {
+            $(this).getAttribute("data-hover");
+        }
+    });
+
+    onmouseleave: function f() {
+
+        $(this).getElementById("emoji")
+    }
+
+
 
 })();
