@@ -11,14 +11,31 @@
 
 (function() {
 
-    document.getElementById("target", function generate_table () {
-        let table = document.createElement("table");
-        let tbody = document.createElement("tbody");
+    let target = document.getElementById("target");
+    let table = document.createElement("table");
+    let tbody = document.createElement("tbody");
 
-        for (let i = 0; i < 2; i++) {
-            let row = document
+    //create table cells...
+    for (let i = 0; i < 2; i++) {
+        //...and row
+        let row = document.createElement("tr");
+
+        for (let j = 0; j < 2; j++) {
+            let cell = document.createElement("td");
+            let celltxt = document.createTextNode("cell in tr" +i+ "column" +j);
+            cell.appendChild(celltxt);
+            row.appendChild(cell);
         }
-    })
+
+        //adds row to end of tbody
+        tbody.appendChild(row);
+    }
+
+    //puts tbody in tbl
+    tbl.appendChild(tbody);
+    //append table to target
+    target.appendChild(tbl);
+
 
 
 
