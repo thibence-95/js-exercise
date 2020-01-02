@@ -22,3 +22,5 @@ Sicco not that I want to seem like a suck-up but I hope whatever family related 
 I'm absolutely stuck on 5.6 seemed so simple at first.
 
 ![interesting...](https://www.thoughtco.com/and-in-javascript-2037515)
+
+![for 6.7](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces)
