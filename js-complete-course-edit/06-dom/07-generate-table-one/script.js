@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("target", function generate_table () {
+        let table = document.createElement("table");
+        let tbody = document.createElement("tbody");
+
+        for (let i = 0; i < 2; i++) {
+            let row = document
+        }
+    })
+
+
 
 })();
