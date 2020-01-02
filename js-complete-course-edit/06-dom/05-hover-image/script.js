@@ -11,17 +11,16 @@
 
 (function() {
 
-    $("#emoji")({
-        onmouseenter: function () {
-            $(this).getAttribute("data-hover");
-        }
+    let img = document.getElementsByTagName("img")[0]; //selects img we want to change
+    let onHov = img.attributes.getNamedItem("data-hover").value; //extracts value of "data-hover"
+    let noHov = img.attributes.getNamedItem("src").value; //extracts value of original image
+
+    img.addEventListener("mouseover", function () { //listen for mouse hover
+        img.setAttribute("src", onHov); //set att to let nr 1
     });
 
-    onmouseleave: function f() {
-
-        $(this).getElementById("emoji")
-    }
-
-
+    img.addEventListener("mouseout", function () {
+        img.setAttribute("src", noHov); //set att to let nr 2
+    })
 
 })();
