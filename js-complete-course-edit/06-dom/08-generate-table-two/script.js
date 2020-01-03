@@ -17,6 +17,7 @@
     let table = document.createElement("table");
     trgt.appendChild(table);
 
+    //for loops make as many columns as it makes if that makes any sense
     for (let i = 0; i < 10; i++) {
         let row = table.insertRow();
         for (let o = 0; o < 10; o++) {
