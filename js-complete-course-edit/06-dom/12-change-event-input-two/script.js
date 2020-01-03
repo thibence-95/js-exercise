@@ -11,7 +11,9 @@
 
 (function() {
 
-    document.getElementById("pass-one").setAttribute("minlength", "8", function () {
+    document.getElementById("pass-one").addEventListener("keyup", function ( {
+
+    }) {
         let input = document.getElementById("pass-one").value;
         let inputLgth = input.length;
 
@@ -19,6 +21,9 @@
 
         if (inputLgth > 8) {
             document.getElementById("validity").innerHTML = "OK";
+        }
+        else (inputLgth < 8) {
+            document.getElementById("validity")
         }
     })
     
