@@ -11,6 +11,21 @@
 
 (function() {
 
-    // your code here
+    //select target
+    let trgt = document.getElementById("target");
+    //makes a tbl
+    let table = document.createElement("table");
+    trgt.appendChild(table);
+
+    for (let i = 0; i < 10; i++) {
+        let row = table.insertRow();
+        for (let o = 0; o < 10; o++) {
+            let column = row.insertCell();
+            column.innerHTML = (o+1)*(i+1);
+        }
+
+    }
+
+
 
 })();
