@@ -11,6 +11,16 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("pass-one").setAttribute("minlength", "8", function () {
+        let input = document.getElementById("pass-one").value;
+        let inputLgth = input.length;
+
+        console.log(inputLgth);
+
+        if (inputLgth > 8) {
+            document.getElementById("validity").innerHTML = "OK";
+        }
+    })
+    
 
 })();
