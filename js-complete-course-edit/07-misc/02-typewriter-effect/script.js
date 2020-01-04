@@ -9,8 +9,19 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function typeWriter() {
 
-    // your code here
+    let i = 0;
+    let txt = document.getElementById("target").innerText;
+    let trgt = document.getElementById("target");
+    let speed = 50;
+
+
+    if (i < txt.length) {
+        txt += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+
 
 })();
