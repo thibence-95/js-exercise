@@ -9,19 +9,20 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function typeWriter() {
+(function() {
 
     let i = 0;
-    let txt = document.getElementById("target").innerText;
-    let trgt = document.getElementById("target");
+    let txt = document.getElementById("target").innerHTML;
     let speed = 50;
 
-
-    if (i < txt.length) {
-        txt += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("target").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
     }
 
+    typeWriter();
 
 })();
