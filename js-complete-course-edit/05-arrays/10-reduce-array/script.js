@@ -89,7 +89,7 @@
         },
     ];
 
-    document.getElementById("run").addEventListener("click", function(){
+    document.getElementById("run").addEventListener("click", function() {
         //using .reduce to transform array above
         let ageSum = people.reduce(function (sum, person) {
 
