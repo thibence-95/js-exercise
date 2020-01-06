@@ -26,3 +26,5 @@ I'm absolutely stuck on 5.6 seemed so simple at first.
 ![for 6.7](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces)
 
 ![for 7.2](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_typewriter)
+
+![used this for 7.4](https://www.w3schools.com/howto/howto_js_rangeslider.asp)
