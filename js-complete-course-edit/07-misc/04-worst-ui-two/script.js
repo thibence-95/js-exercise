@@ -11,6 +11,17 @@
 
 (function() {
 
-    // your code here
+    let btnA = document.getElementById("part-one");
+    let btnB = document.getElementById("part-two");
+    let btnC = document.getElementById("part-three");
+    let btnD = document.getElementById("part-four");
+    let output = document.getElementById("target");
+
+    btnA.onclick = function() {
+        let outputA = (parseInt(btnA.innerText++));
+        output.innerHTML = "0" + btnA.innerHTML + btnB.innerHTML + btnC.innerHTML + btnD.innerHTML;
+    }
+
+
 
 })();
