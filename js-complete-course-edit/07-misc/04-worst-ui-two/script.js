@@ -11,17 +11,31 @@
 
 (function() {
 
-    let btnA = document.getElementById("part-one");
-    let btnB = document.getElementById("part-two");
-    let btnC = document.getElementById("part-three");
-    let btnD = document.getElementById("part-four");
-    let output = document.getElementById("target");
+    let buttons = document.querySelectorAll("button");
 
-    btnA.onclick = function() {
-        let outputA = (parseInt(btnA.innerText++));
-        output.innerHTML = "0" + btnA.innerHTML + btnB.innerHTML + btnC.innerHTML + btnD.innerHTML;
-    }
+    document.getElementById("target").innerHTML = 4600000000;
 
+    buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            let newNumber;
 
+            if (button.id === "part-four"){
+                newNumber =+ document.getElementById("target").innerHTML;
+                document.getElementById("target").innerHTML = newNumber + 1;
+            }
+            if (button.id === "part-three"){
+                newNumber =+ document.getElementById("target").innerHTML;
+                document.getElementById("target").innerHTML = newNumber + 100;
+            }
+            if (button.id === "part-two"){
+                newNumber =+ document.getElementById("target").innerHTML;
+                document.getElementById("target").innerHTML = newNumber + 1000;
+            }
+            if (button.id === "part-one"){
+                newNumber =+ document.getElementById("target").innerHTML;
+                document.getElementById("target").innerHTML = newNumber + 10000;
+            }
+        })
+    })
 
 })();
