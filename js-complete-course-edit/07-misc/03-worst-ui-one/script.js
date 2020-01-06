@@ -15,6 +15,8 @@
     let output = document.getElementById("target");
     output.innerHTML = slider.value; //puts slider output in "target" element
 
-    
+    slider.oninput = function () {
+        output.innerHTML = this.value;
+    }
 
 })();
