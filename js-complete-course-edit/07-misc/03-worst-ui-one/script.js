@@ -11,6 +11,10 @@
 
 (function() {
 
-    // your code here
+    let slider = document.getElementById("slider");
+    let output = document.getElementById("target");
+    output.innerHTML = slider.value; //puts slider output in "target" element
+
+    
 
 })();
