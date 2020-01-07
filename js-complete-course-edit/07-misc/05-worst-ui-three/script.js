@@ -15,10 +15,29 @@
     const buttons = document.getElementsByTagName("button");
     const input = document.getElementsByTagName("input");
 
-    for (let i = 0, i < input.length, i++) {
+    for (let i = 0; i<input.length; i++) {
         function slot() {
             let randomNr = Math.floor(Math.random()*99);
             input[1].value = randomNr;
         }
+
+        const run = setInterval(slot, 100);
+        buttons[i].addEventListener("click", function () {
+            let minVal = input[i].getAttribute("data-min");
+            let maxVal = input[i].getAttribute("data-max");
+
+            let randomVal = Math.floor(Math.random()*(maxVal - minVal) + minVal);
+            let randomBig = Math.floor(Math.random()*(499 - 460) + 460);
+
+            input[0].value = randomBig;
+            clearInterval(run);
+
+
+            document.getElementById("target").innerHTML = "+0"
+                + input[0].value
+                + input[1].value
+                + input[2].value
+                + input[3].value
+        });
     }
 })();
