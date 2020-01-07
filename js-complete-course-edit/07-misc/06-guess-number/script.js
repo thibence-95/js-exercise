@@ -11,25 +11,26 @@
 
 (function() {
 
-    let randomX = Math.floor(Math.random()*99) + 1;
-    let GuessedTimes = 0;
+    let randomX = Math.floor(Math.random()*(99) + 1);
+    let guessCount = 0; //amount of times guessed
+
     GuessMyNumber();
     function GuessMyNumber() {
-        var guessedNumber = prompt("Guess my Number");
+        let guessedNr = prompt("Guess a number");
 
-        if (guessedNumber == randomX) {
-
-            alert(`You guessed it in ${GuessedTimes} times!`);
-        } else if (guessedNumber > randomX) {
-            alert("Guess Lower");
-            GuessedTimes++;
-            GuessMyNumber();
-        } else {
-            alert("Guess Higher");
-            GuessedTimes++;
+        if (guessedNr === randomX) {
+            alert('you guessed it in ${guessCount} times!')
+        }
+        else if (guessedNr < randomX) {
+            alert("Guess higher");
+            guessCount++;
             GuessMyNumber();
         }
-
+        else {
+            alert("Guess lower");
+            guessCount++;
+            GuessMyNumber();
+        }
     }
 
 })();
