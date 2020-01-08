@@ -10,5 +10,21 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+        let input = document.getElementById("hero-id").value;
+
+        fetch("http://localhost:12345/_shared/api.json")
+            .then((response)=> {
+                return response.json()
+            })
+
+            .then((data) => {
+                for (i=0; i < data.heroes[i]; i++) {
+                    if (heroName==(data.heroes[i].name)) {
+                        let itm = document.getElementById("tpl-hero");
+                        let clone = itm.content.cloneNode(true);
+                    }
+                }
+            })
+    })
 })();
