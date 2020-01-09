@@ -18,13 +18,24 @@
                 return response.json()
             })
 
-            .then((data) => {
-                for (i=0; i < data.heroes[i]; i++) {
-                    if (heroName==(data.heroes[i].name)) {
-                        let itm = document.getElementById("tpl-hero");
-                        let clone = itm.content.cloneNode(true);
+            .then (function (myJson) {
+                let heroes = myJson.heroes;
+                heroes.forEach(function (element) {
+                    let tplTarget = document.getElementById("tpl-target");
+                    let heroId = document.getElementById("hero-id");
+                    console.log(heroes);
+
+                    let newTarget = tplTarget.content.cloneNode(true);
+
+                    if (heroId == element.id) {
+
+                        newTarget.querySelector(".name").innerHTML = element.name;
+                        newTarget.querySelector(".alter-ego").innerHTML = element.alterEgo;
+                        newTarget.querySelector(".powers").innerHTML = element.abilities;
+
+                        document.getElementById("target").appendChild(newTarget);
                     }
-                }
+                })
             })
     })
 })();
