@@ -15,27 +15,32 @@
 
         fetch("http://localhost:12345/_shared/api.json")
             .then((response)=> {
-                return response.json()
+                return response.json();
             })
 
-            .then (function (myJson) {
-                let heroes = myJson.heroes;
-                heroes.forEach(function (element) {
-                    let tplTarget = document.getElementById("tpl-target");
-                    let heroId = document.getElementById("hero-id");
-                    console.log(heroes);
+            .then((data)=> {
 
-                    let newTarget = tplTarget.content.cloneNode(true);
+                    //console.log(heroes, index)
+                    //let clone = itm.content.cloneNode(true); //true takes complete template (deep)
+                    let inputVal = document.getElementById("hero-id").value-1;
+                    //console.log(typeof, inputVal);
 
-                    if (heroId == element.id) {
+                    if (inputVal >= data.heroes.length) {
+                        console.log("test");
 
-                        newTarget.querySelector(".name").innerHTML = element.name;
-                        newTarget.querySelector(".alter-ego").innerHTML = element.alterEgo;
-                        newTarget.querySelector(".powers").innerHTML = element.abilities;
-
-                        document.getElementById("target").appendChild(newTarget);
                     }
-                })
+                    else {
+                        const clone = document.getElementById("tpl-hero").content.cloneNode(true);
+
+                        clone.querySelector(".name").innerHTML = data.heroes[inputVal].name;
+                        clone.querySelector(".alter-ego").innerHTML = data.heroes[inputVal].alterEgo;
+                        clone.querySelector(".powers").innerHTML = data.heroes[inputVal].abilities;
+
+                        document.getElementById("target").appendChild(clone);
+                        //console.log(heroes[i]);
+                    }
+
+
             })
     })
 })();
